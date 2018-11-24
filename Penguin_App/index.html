@@ -1,0 +1,43 @@
+<!-- ----------------------------------------------------------------------
+Project       :Penguin Application
+Date          :05-10-2018
+Auther        :Sumit Patil
+Institute     :WebStack Academy (P) Ltd.
+-------------------------------------------------------------------------- -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, intial-scale=1.0"/>
+	<title>Whack a pengiun</title>
+	<link href="style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<article id="article">
+<!--Declaring all the div with onclick attributes sending it own unique element to the function changeimage-->
+	<div onclick="changeimage(this);"></div>
+		<div onclick="changeimage(this);"></div>
+			<div onclick="changeimage(this);"></div>
+				<div onclick="changeimage(this);"></div>
+					<div onclick="changeimage(this);"></div>
+						<div onclick="changeimage(this);"></div>
+							<div onclick="changeimage(this);"></div>
+								<div onclick="changeimage(this);"></div>
+									<div onclick="changeimage(this);"></div>
+
+
+
+</article>
+<!--hiding this particular part div so that later it can be shown  at the hit of wack penguin-->
+	<div id="rest" style=" position: absolute; display: none; width: 100%; height: 100%; background: lightblue !important; z-index: 3; ">
+	    <img class="animate" style="margin-left: 25%; margin-top: 15%;" src="Images/yeti.png">
+	    <h1  style="color: crimson;margin-left: 25%;">GOT YOU.!!</h1>
+		<button style="width: 80px; height: 80px;  position: relative; bottom: -15%;margin-left: 28%; background-color: white; color: gray;" 
+		 onclick="location.reload();">Restart</button>	
+	</div>	
+	
+
+ <script src="app.js"></script>													
+</body>
+
+
+</html>

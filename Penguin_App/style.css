@@ -1,0 +1,41 @@
+body{
+    background-color: skyblue;
+     }
+/*	setting all the attributes fors an div  with defualt image*/
+    article>div{
+        position: relative;
+        margin-left: 2;
+        display: block;
+        float:left; 
+        width:33%;
+        height: 200px;
+        background-image:  url("Images/mound.png");
+        background-repeat: no-repeat;
+        transition: all .6s ease !important;
+    }
+    
+    /*Change the source of img when hovered on div */
+    article>div:hover{
+                    background-image:url("Images/mound_hover.png");
+    }
+    /* adding padding to the body to make the article to center*/
+    body{
+        padding: 0% 5% 5% 15%;
+    }
+    
+/* Animation of the img when its over*/
+    .animate{
+        position: relative;
+        animation: scaleupNdown 2s infinite;
+    }
+    @keyframes scaleupNdown{
+        0%{
+           transform:  scale(.8);
+        }
+        50%{
+              transform:  scale(1.5);                  
+        }
+        100%{
+                 transform:  scale(.8);
+        }
+    }
